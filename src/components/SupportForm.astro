@@ -1,0 +1,65 @@
+---
+// No frontmatter needed for simple form
+---
+
+<div class="form-section">
+  <h2>Add Your Voice</h2>
+
+  <form name="support-form" method="POST" action="/success" data-netlify="true">
+    <div class="form-group">
+      <label for="name">Full Name *</label>
+      <input type="text" id="name" name="name" required />
+    </div>
+
+    <div class="form-group">
+      <label>Location</label>
+      <div class="location-group">
+        <input type="text" name="city" placeholder="City" />
+        <input type="text" name="state" placeholder="State/Province" />
+        <input type="text" name="country" placeholder="Country" />
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="other-info">Additional Information</label>
+      <input 
+        type="text" 
+        id="other-info" 
+        name="other_info" 
+        placeholder="Title, organization, etc." 
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="comment">Comment (optional)</label>
+      <textarea 
+        id="comment" 
+        name="comment" 
+        placeholder="Add a personal comment. Please use compassionate speech."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email for Updates (optional)</label>
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        placeholder="your@email.com" 
+      />
+    </div>
+
+    <button type="submit">Add My Voice</button>
+  </form>
+</div>
+
+<script>
+  // Simple form submission feedback
+  document.querySelector('form')?.addEventListener('submit', function(e) {
+    const button = this.querySelector('button');
+    if (button) {
+      button.textContent = 'Submitting...';
+      button.disabled = true;
+    }
+  });
+</script>

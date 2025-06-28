@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Thank You - Support Statement">
+  <div class="container">
+    <div class="success-message">
+      <h1>Thank you for your support!</h1>
+      <p>
+        Your submission has been received successfully. 
+        We appreciate you taking the time to add your voice to create solidarity and support.
+      </p>
+    </div>
+
+    <div style="margin-top: 2rem;">
+      <h2>What happens next?</h2>
+      <ul>i>
+        <li>If you provided an email, you'll receive updates about this initiative</li>
+        <li>Your support helps build momentum for our community</li>
+      </ul>
+    </div>
+
+    <div style="margin-top: 2rem; text-align: center;">
+      <a href="/" style="display: inline-block; background: #1976d2; color: white; padding: 0.75rem 2rem; text-decoration: none; border-radius: 4px;">
+        ← Back to Statement
+      </a>
+    </div>
+
+    <div style="margin-top: 2rem; padding: 1rem; background: #f0f0f0; border-radius: 4px; font-size: 0.9rem;">
+      <h3>Share this cause</h3>
+      <p>Help spread the word by sharing this statement with others who might be interested:</p>
+      <p style="font-family: monospace; background: white; padding: 0.5rem; border-radius: 4px;">
+        {Astro.url.origin}
+      </p>
+    </div>
+  </div>
+</Layout>
