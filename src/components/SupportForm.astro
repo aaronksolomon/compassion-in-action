@@ -43,11 +43,23 @@
       <label class="checkbox-label">
         <input 
           type="checkbox" 
+          id="organize" 
+          name="organize" 
+          value="yes"
+        />
+        <span class="checkbox-text">I'm interested in connecting with other practitioners and groups to organize and build communities of loving resistance in my area</span>
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label class="checkbox-label">
+        <input 
+          type="checkbox" 
           id="hide-info" 
           name="hide-info" 
-          value="no"
+          value="yes"
         />
-        <span class="checkbox-text">Please hide my name and info. (Your information will not be displayed)</span>
+        <span class="checkbox-text">Please hide my name and info (Your information will not be displayed publicly)</span>
       </label>
     </div>
 
@@ -59,9 +71,10 @@
         name="email" 
         placeholder="your@email.com" 
       />
+      <small style="color: #666; font-size: 0.9rem;">We'll use this to share updates about sangha building and coordinated actions</small>
     </div>
 
-    <button type="submit">Add My Voice</button>
+    <button type="submit">Add My Voice to This Community</button>
   </form>
 </div>
 
